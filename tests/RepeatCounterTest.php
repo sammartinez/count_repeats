@@ -8,10 +8,10 @@
         function test_counterRepeat_oneLetterWord()
         {
             $test_RepeatCounter = new RepeatCounter;
-            $input1 = "a";
-            $input2 = "a";
+            $user_word = "a";
+            $user_string = "a";
 
-            $result = $test_RepeatCounter->counterRepeat($input1, $input2);
+            $result = $test_RepeatCounter->counterRepeat($user_word, $user_string);
 
             $this->assertEquals(1, $result);
         }
@@ -19,12 +19,23 @@
         function test_counterRepeat_oneLetterWordTwice()
         {
             $test_RepeatCounter = new RepeatCounter;
-            $input1 = "a";
-            $input2 = "a unicorn can only eat a cup of food";
+            $user_word = "a";
+            $user_string = "a unicorn can only eat a cup of food";
 
-            $result = $test_RepeatCounter->counterRepeat($input1, $input2);
+            $result = $test_RepeatCounter->counterRepeat($user_word, $user_string);
 
             $this->assertEquals(2, $result);
+        }
+
+        function test_counterRepeat_multipleLetterWordOnce()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $user_word = "bear";
+            $user_string = "bear is a dog that sam owns";
+
+            $result = $test_RepeatCounter->counterRepeat($user_word, $user_string);
+
+            $this->assertEquals(1, $result);
         }
     }
 

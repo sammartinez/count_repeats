@@ -3,11 +3,17 @@
     class RepeatCounter
     {
 
-        function counterRepeat($input1, $input2)
+        function counterRepeat($user_word, $user_string)
         {
-            if($input1 == "a" && substr_count($input2, $input1)) {
-                return 1;
+            $input_array = explode(" ", $user_string);
+            $count = 0;
+
+            foreach($input_array as $word) {
+                if($user_word == $word) {
+                    $count++;
+                }
             }
+            return $count;
         }
     }
 
