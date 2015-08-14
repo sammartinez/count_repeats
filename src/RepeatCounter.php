@@ -10,12 +10,16 @@
             $user_word = strtolower($user_word);
             $count = 0;
 
-            foreach($input_array as $word) {
-                if($user_word == $word) {
-                    $count++;
+            if($user_word == " ") {
+                return "Please enter a valid word";
+            } else {
+                foreach($input_array as $word) {
+                    if($user_word == $word) {
+                        $count++;
+                    }
                 }
+                return $count;
             }
-            return $count;
         }
     }
 
