@@ -24,13 +24,20 @@ Output: 1
 Behavior: tacos (multiple-letter word) will show up twice
 
 Input 1: "tacos"
-Input 2: "i love tacos. tacos are a way of life"
+Input 2: "i love tacos tacos are a way of life"
 
 Output: 2
 -------------Fourth Case----------------
 Behavior: converts every input into lowercase
 
-Input 1: "A"
-Input 2: "a"
+Input 1: "Taco"
+Input 2: "i love tacos tacos are a way of life"
 
-Output: 1
+Output: 2
+-------------Fourth Case----------------
+Behavior: Replaces special characters with spaces
+
+Input 1: "a"
+Input 2: "a dog.. a dog is a friend that loves you, well sometimes."
+
+Output: 3
