@@ -79,7 +79,7 @@
 
             $result = $test_RepeatCounter->counterRepeat($user_word, $user_string);
 
-            $this->assertEquals("Please enter a word to check for", $result);
+            $this->assertEquals(-101, $result);
         }
 
         function test_counterRepeat_userInputsNothingSentence()
@@ -90,7 +90,7 @@
 
             $result = $test_RepeatCounter->counterRepeat($user_word, $user_string);
 
-            $this->assertEquals("Please enter your sentence", $result);
+            $this->assertEquals(-101, $result);
         }
     }
 
