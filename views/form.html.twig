@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+        <title>Count Repeats</title>
+    </head>
+    <body>
+        <div class="container">
+            <h3>Count Repeats</h3>
+            <form action="/score" method="get">
+                <div class="form-group">
+                    <label class="text-danger" for="user_word">Word:</label>
+                    <input name="user_word" id="user_word" type="text" class="form-control" required pattern="[a-zA-Z]+" />
+                </div>
+                <div class="form-group">
+                    <label class="text-danger" for="user_word">Sentence:</label>
+                    <input name="user_sentence" id="user_sentence" type="text" class="form-control" required pattern="[a-zA-Z]+" />
+                </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

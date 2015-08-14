@@ -17,9 +17,9 @@
     //Result route
     $app->get("/count", function() use ($app) {
             $my_RepeatCounter = new RepeatCounter;
-            $the_count = $my_RepeatCounter->counterRepeat($_GET['user_word']);
+            $the_count = $my_RepeatCounter->counterRepeat($_GET['user_word'], $_GET['user_sentence']);
 
-            return $app['twig']->render('count.html.twig', array('score' => $the_count));
+            return $app['twig']->render('count.html.twig', array('count' => $the_count));
     });
 
     return $app;
