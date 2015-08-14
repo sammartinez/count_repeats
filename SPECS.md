@@ -34,10 +34,18 @@ Input 1: "Taco"
 Input 2: "i love tacos tacos are a way of life"
 
 Output: 2
--------------Fourth Case----------------
+-------------Fifth Case----------------
 Behavior: Replaces special characters with spaces
 
 Input 1: "a"
 Input 2: "a dog.. a dog is a friend that loves you, well sometimes."
 
 Output: 3
+
+-------------Sixth Case----------------
+Behavior: Replaces special characters with spaces
+
+Input 1: " "
+Input 2: "a dog.. a dog is a friend that loves you, well sometimes."
+
+Output: -1

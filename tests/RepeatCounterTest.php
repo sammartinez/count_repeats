@@ -70,6 +70,17 @@
 
             $this->assertEquals(3, $result);
         }
+
+        function test_counterRepeat_userInputsNothing()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $user_word = " ";
+            $user_string = "a dog.. a dog is a friend that loves you, well sometimes.";
+
+            $result = $test_RepeatCounter->counterRepeat($user_word, $user_string);
+
+            $this->assertEquals(-1, $result);
+        }
     }
 
 
