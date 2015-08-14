@@ -2,9 +2,9 @@
 
     class RepeatCounter
     {
-        function counterRepeat($input_word)
+        function counterRepeat($input1, $input2)
         {
-            if($input_word == "a") {
+            if($input1 == "a" && $input2 = "a") {
                 return 1;
             }
         }
