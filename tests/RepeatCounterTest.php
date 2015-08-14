@@ -79,7 +79,7 @@
 
             $result = $test_RepeatCounter->counterRepeat($user_word, $user_string);
 
-            $this->assertEquals("Please enter a valid word", $result);
+            $this->assertEquals("Please enter a word to check for", $result);
         }
     }
 
