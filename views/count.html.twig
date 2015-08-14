@@ -6,8 +6,10 @@
     </head>
     <body>
         <div class="container">
-            {% if count is not empty %}
-        <h3>The word you're searching for is found {{ count }} times within the sentence.</h3>
+            {% if count is empty %}
+                <h3>Please input into both fields in order to find a word search.</h3>
+            {% elseif count is not empty %}
+                <h3>The word you're searching for is found {{ count }} times within the sentence.</h3>
             {% endif %}
         <a href="/"><button type="submit" class="btn btn-success">Search for other words</button></a>
         </div>
