@@ -74,7 +74,7 @@
         function test_counterRepeat_userInputsNothingWord()
         {
             $test_RepeatCounter = new RepeatCounter;
-            $user_word = " ";
+            $user_word = "";
             $user_string = "a dog.. a dog is a friend that loves you, well sometimes.";
 
             $result = $test_RepeatCounter->counterRepeat($user_word, $user_string);
@@ -86,7 +86,7 @@
         {
             $test_RepeatCounter = new RepeatCounter;
             $user_word = "taco";
-            $user_string = " ";
+            $user_string = "";
 
             $result = $test_RepeatCounter->counterRepeat($user_word, $user_string);
 
