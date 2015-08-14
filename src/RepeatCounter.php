@@ -17,9 +17,14 @@
             //starting point for how many times the word appears in the sentence
             $count = 0;
 
-            //if the user doesn't enter anything then return the error message below
+            //if the user doesn't enter anything for the word
             if($user_word == " ") {
                 return "Please enter a word to check for";
+            }
+
+            //if the user doesn't enter anything for the sentence to check on
+            elseif ($user_string == " ") {
+                return "Please enter your sentence";
             }
             //otherwise take the array and check for matches
             else {

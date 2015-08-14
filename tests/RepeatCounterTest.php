@@ -71,7 +71,7 @@
             $this->assertEquals(3, $result);
         }
 
-        function test_counterRepeat_userInputsNothing()
+        function test_counterRepeat_userInputsNothingWord()
         {
             $test_RepeatCounter = new RepeatCounter;
             $user_word = " ";
@@ -80,6 +80,17 @@
             $result = $test_RepeatCounter->counterRepeat($user_word, $user_string);
 
             $this->assertEquals("Please enter a word to check for", $result);
+        }
+
+        function test_counterRepeat_userInputsNothingSentence()
+        {
+            $test_RepeatCounter = new RepeatCounter;
+            $user_word = "taco";
+            $user_string = " ";
+
+            $result = $test_RepeatCounter->counterRepeat($user_word, $user_string);
+
+            $this->assertEquals("Please enter your sentence", $result);
         }
     }
 

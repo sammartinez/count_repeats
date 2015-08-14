@@ -48,4 +48,4 @@ Behavior: Replaces special characters with spaces
 Input 1: " "
 Input 2: "a dog.. a dog is a friend that loves you, well sometimes."
 
-Output: -1
+Output: Please enter a word to check for 
