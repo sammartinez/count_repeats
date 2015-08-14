@@ -5,15 +5,15 @@
     </head>
     <body>
         <div class="container">
-            <h3>Count Repeats</h3>
-            <form action="/score" method="get">
+            <h1>Count Repeats</h1>
+            <form action="/count" method="get">
                 <div class="form-group">
-                    <label class="text-danger" for="user_word">Word:</label>
-                    <input name="user_word" id="user_word" type="text" class="form-control" required pattern="[a-zA-Z]+" />
+                    <label class="text-muted" for="input_word">Enter a word to search for:</label>
+                    <input name="input_word" id="input_word" type="text" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label class="text-danger" for="user_word">Sentence:</label>
-                    <input name="user_sentence" id="user_sentence" type="text" class="form-control" required pattern="[a-zA-Z]+" />
+                    <label class="text-muted" for="input_string">Input the sentence below you would like to check:</label>
+                    <input name="input_string" id="input_string" type="text" class="form-control">
                 </div>
                     <button type="submit" class="btn btn-success">Submit</button>
             </form>

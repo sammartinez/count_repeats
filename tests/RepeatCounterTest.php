@@ -53,11 +53,11 @@
         {
             $test_RepeatCounter = new RepeatCounter;
             $user_word = "Tacos";
-            $user_string = "i love tacos. tacos are a way of life";
+            $user_string = "i love tacos";
 
             $result = $test_RepeatCounter->counterRepeat($user_word, $user_string);
 
-            $this->assertEquals(2, $result);
+            $this->assertEquals(1, $result);
         }
 
         function test_counterRepeat_replaceSpecialCharacters()
